@@ -1,3 +1,4 @@
+import MeetingTypeList from '@/components/MeetingTypeList';
 import React from 'react'
 
 function Home() {
@@ -6,12 +7,9 @@ function Home() {
     const date = (new Intl.DateTimeFormat('en-US', { dateStyle: 'full' })).format(now);
     return (
         <section className='flex size-full flex-col text-white gap-10'>
-            <h1 className='text-3xl font-bold'>
-                Home
-            </h1>
 
-            <div className='h-[300px] w-full bg-cover bg-hero rounded-[20px]'>
-                <div className='h-full flex flex-col justify-between max-md:px-5 max-md:py-8 lg: py-11'>
+            <div className='h-[300px] w-full bg-cover bg-hero rounded-[20px] md:pl-10'>
+                <div className='h-full flex flex-col justify-between max-md:px-5 max-lg:py-8 lg:py-11'>
                     <p className='glassmorphism max-w-[270px] py-2 rounded text-center text-base font-normal'>
                         Upcoming meeting at 12:30PM
                     </p>
@@ -22,6 +20,8 @@ function Home() {
                     </div>
                 </div>
             </div>
+
+            <MeetingTypeList />
         </section>
     )
 }

@@ -28,7 +28,7 @@ const MobileNav = () => {
                 <SheetContent side="left" className='border-none bg-dark-1'>
                     <Link href="/" className='flex items-center gap-1'>
                         <Image src='/icons/logo.svg' width={32} height={32} alt='logo' className='max-sm:size-10' />
-                        <p className='text-[26px] text-white font-extrabold'>Yoom</p>
+                        <p className='text-[26px] text-white font-extrabold'>VortexP</p>
                     </Link>
 
                     <div className='flex flex-col h-[calc(100vh-72px)] justify-between overflow-y-auto'>
